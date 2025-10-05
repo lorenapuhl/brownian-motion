@@ -91,14 +91,14 @@ The analysis of the experimental data yielded:
 
 #### 1. Particle Trajectory
 <p align="center">
-  <img src="Graph_Brown.pdf" alt="Brownian Motion Trajectory" width="800"/>
+  <img src="https://github.com/lorenapuhl/brownian-motion/blob/main/experimental_analysis/Graph_Brown.pdf" alt="Brownian Motion Trajectory" width="800"/>
 </p>
 
 The trajectory shows the random walk of the particle due to collisions with surrounding molecules.
 
 #### 2. Displacement Distribution
 <p align="center">
-  <img src="Brown_histogram.pdf" alt="Displacement Histogram" width="800"/>
+  <img src="https://github.com/lorenapuhl/brownian-motion/blob/main/experimental_analysis/Brown_histogram.pdf" alt="Displacement Histogram" width="800"/>
 </p>
 
 The histogram demonstrates that displacements follow a Gaussian distribution, as predicted by the theory of Brownian motion. The fitted Gaussian parameters are:
@@ -107,7 +107,7 @@ The histogram demonstrates that displacements follow a Gaussian distribution, as
 
 #### 3. Cumulative Squared Displacement
 <p align="center">
-  <img src="Brown_cumulative.pdf" alt="Cumulative Displacement" width="800"/>
+  <img src="https://github.com/lorenapuhl/brownian-motion/blob/main/experimental_analysis/Brown_cumulative.pdf" alt="Cumulative Displacement" width="800"/>
 </p>
 The linear relationship between cumulative squared displacement and time confirms Einstein's diffusion relation. The slope of the fitted line provides an independent measure of the diffusion coefficient.
 
