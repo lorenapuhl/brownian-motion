@@ -2,7 +2,36 @@
 
 A Python script for analyzing experimental Brownian motion data to calculate the Boltzmann constant and diffusion coefficient.
 
+## Theory
+
 Brownian motion is the random movement of particles in a fluid caused by collisions with molecules. The Boltzmann constant (k<sub>B</sub>) links particle motion to temperature, while the diffusion coefficient (D) describes how quickly particles spread over time. Together, these concepts help connect microscopic particle dynamics to macroscopic behavior.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f222eccb-5129-413c-b1a3-036e05672c83" alt="Displacement Histogram" width="800"/>
+     <br>
+  <em>Figure 1: Particle trajectories determined by brownian motion. (Figure from https://towardsdatascience.com/stochastic-processes-simulation-brownian-motion-the-basics-c1d71585d9f9/) </em>
+</p>
+ 
+According to the **Einstein–Smoluchowski relation**, the diffusion coefficient $\( D \)$ is given by:
+
+<p align="center">
+$$
+D = \frac{k_B T}{6\pi \eta r}
+$$
+
+
+where  
+- $k_B$ — Boltzmann constant  
+- $T$ — absolute temperature  
+- $\eta$ — dynamic viscosity of the fluid  
+- $r$ — radius of the particle  
+
+From this, the **Boltzmann constant** can be determined as:
+
+$$
+k_B = \frac{6 \pi \eta r D}{T}
+$$
+</p>
 
 ---
 
@@ -99,7 +128,7 @@ The trajectory shows the random walk of the particle due to collisions with surr
 
 #### 2. Displacement Distribution
 <p align="center">
-  <img src=""https://github.com/user-attachments/assets/b38b9106-8ec0-406a-b3d7-1045b68ec79a" alt="Displacement Histogram" width="800"/>
+  <img src="https://github.com/user-attachments/assets/b38b9106-8ec0-406a-b3d7-1045b68ec79a" alt="Displacement Histogram" width="800"/>
 </p>
 
 
