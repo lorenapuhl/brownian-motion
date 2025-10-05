@@ -4,6 +4,8 @@ A Python script for analyzing experimental Brownian motion data to calculate the
 
 Brownian motion is the random movement of particles in a fluid caused by collisions with molecules. The Boltzmann constant (k<sub>B</sub>) links particle motion to temperature, while the diffusion coefficient (D) describes how quickly particles spread over time. Together, these concepts help connect microscopic particle dynamics to macroscopic behavior.
 
+---
+
 ## Overview
 
 This script processes particle trajectory data from Brownian motion experiments and performs statistical analysis to determine fundamental physical constants. The analysis is based on the Einstein relation for diffusion.
@@ -73,13 +75,7 @@ The script performs the following analysis steps:
 5. **Diffusion Coefficient**: Calculates D = k_B·T / (6πηa)
 6. **Statistical Validation**: Creates histogram and cumulative displacement plots
 
-## Key Features
-
-- Automatic conversion of comma-decimal notation
-- Exclusion of initial transient data points (first 23 points)
-- Full uncertainty propagation for calculated constants
-- Linear fitting for cumulative displacement analysis
-- Publication-quality figure generation
+---
 
 ## Results
 
@@ -94,20 +90,25 @@ The analysis of the experimental data yielded:
 ### Generated Figures
 
 #### 1. Particle Trajectory
-![Brownian Motion Trajectory](Graph_Brown.pdf)
+<p align="center">
+  <img src="Graph_Brown.pdf" alt="Brownian Motion Trajectory" width="800"/>
+</p>
 
 The trajectory shows the random walk of the particle due to collisions with surrounding molecules.
 
 #### 2. Displacement Distribution
-![Displacement Histogram](Brown_histogram.pdf)
+<p align="center">
+  <img src="Brown_histogram.pdf" alt="Displacement Histogram" width="800"/>
+</p>
 
 The histogram demonstrates that displacements follow a Gaussian distribution, as predicted by the theory of Brownian motion. The fitted Gaussian parameters are:
 - μ = -0.06 μm
 - σ = 1.27 μm
 
 #### 3. Cumulative Squared Displacement
-![Cumulative Displacement](Brown_cumulative.pdf)
-
+<p align="center">
+  <img src="Brown_cumulative.pdf" alt="Cumulative Displacement" width="800"/>
+</p>
 The linear relationship between cumulative squared displacement and time confirms Einstein's diffusion relation. The slope of the fitted line provides an independent measure of the diffusion coefficient.
 
 ## Author
