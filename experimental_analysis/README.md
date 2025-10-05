@@ -2,6 +2,8 @@
 
 A Python script for analyzing experimental Brownian motion data to calculate the Boltzmann constant and diffusion coefficient.
 
+Brownian motion is the random movement of particles in a fluid caused by collisions with molecules. The Boltzmann constant (k<sub>B</sub>) links particle motion to temperature, while the diffusion coefficient (D) describes how quickly particles spread over time. Together, these concepts help connect microscopic particle dynamics to macroscopic behavior.
+
 ## Overview
 
 This script processes particle trajectory data from Brownian motion experiments and performs statistical analysis to determine fundamental physical constants. The analysis is based on the Einstein relation for diffusion.
