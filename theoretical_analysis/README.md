@@ -93,7 +93,7 @@ where $W_i \sim N(0,1)$ are independent Gaussian random variables.
 
 ---
 
-## Repository Structure**
+## Repository Structure
 
 ```
 ├── README.md                      # This file - project overview
