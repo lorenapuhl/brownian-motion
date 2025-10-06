@@ -14,7 +14,7 @@ Both projects investigate fundamental questions in statistical mechanics, stocha
 ## Repository Structure
 
 ```
-brownian-motion-analysis/
+brownian-motion/
 │
 ├── README.md                    # This file - general project overview
 │
