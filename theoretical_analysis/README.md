@@ -91,6 +91,21 @@ $$
 
 where $W_i \sim N(0,1)$ are independent Gaussian random variables.
 
+---
+
+## Repository Structure**
+
+```
+├── README.md                      # This file - project overview
+├── main.py                        # Simulation script
+├── results/                       # Result figures and plots
+│   ├── free_diffusion.png         # Histograms for free diffusion simulations of different time-lengths
+│   ├── free_diffusion_msd.png     # Plot MSD over simulation-times for free diffusion
+│   ├── harmonic_potential.png     # Histograms for diffusion simulations in a harmonic potential of different time-lengths
+│   ├── harmonic_potential_msd.png # Plot MSD over simulation-times for harmonic potential
+
+```
+
 ## Installation
 
 ### Requirements
