@@ -96,13 +96,14 @@ The script generates:
 ## Analysis Methods
 
 The script performs the following analysis steps:
-
-1. **Trajectory Visualization**: Plots the 2D path of the particle
-2. **Displacement Calculation**: Computes step-by-step position changes
-3. **Mean Squared Displacement**: Calculates ⟨r²⟩ and time intervals
-4. **Boltzmann Constant**: Determines k_B using: k_B = (6πηa⟨r²⟩) / (4T⟨Δt⟩)
-5. **Diffusion Coefficient**: Calculates D = k_B·T / (6πηa)
-6. **Statistical Validation**: Creates histogram and cumulative displacement plots
+1. **Trajectory Visualization**: Plots the 2D path of the particle.  
+2. **Displacement Calculation**: Computes step-by-step position changes.  
+3. **Mean Squared Displacement**: Calculates $\langle r^2 \rangle$ and time intervals.  
+4. **Boltzmann Constant**: Determines $k_B$ using:  
+   $k_B = \frac{6 \pi \eta a \langle r^2 \rangle}{4 T \langle \Delta t \rangle}$
+5. **Diffusion Coefficient**: Calculates  
+   $D = \frac{k_B T}{6 \pi \eta a}$
+6. **Statistical Validation**: Creates histogram and cumulative displacement plots.
 
 ---
 
