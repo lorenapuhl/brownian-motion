@@ -39,6 +39,20 @@ $$
 
 This script processes particle trajectory data from Brownian motion experiments and performs statistical analysis to determine fundamental physical constants. The analysis is based on the Einstein relation for diffusion.
 
+## Repository Structure
+
+```
+├── README.md                    # This file - project overview
+├── main.py                      # python script for analysis
+├── measurements.dat             # experimental data
+├── results/                     # analysis results
+│   ├── Graph_Brown.png          # Visualising particle displacements
+│   ├── Brown_histogram.png      # Histogram of particle displacements
+│   ├── Brown_cumulative.png     # Plot cumulative displacement over time
+
+```
+
+
 ## Requirements
 
 ```bash
