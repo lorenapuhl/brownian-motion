@@ -153,11 +153,24 @@ time_grid, positions = simulator.simulate_trajectories(
 
 ### Free Diffusion
 
-![Free diffusion position distributions at various times](plots/free_diffusion_distributions.png)
-*Position distributions at t = 0.5, 1.0, 3.0, 5.0, 10.0. Histograms show simulation results, red dots show analytical Gaussian solution.*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4fefcb28-b949-467e-8733-dd5cde625aa0"  alt="Image 2" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/8fd68781-6676-4012-9f43-a4992600b83d"alt="Image 1" width="45%"/>
+</p>
 
-![MSD vs time for free diffusion](plots/free_diffusion_msd.png)
-*Mean Square Displacement grows linearly with time (MSD = 2Dt), confirming diffusive behavior.*
+<p align="center">
+  <em>Figure 3: Position distributions at t = 0.5 (left) and t= 10.0. (right). Histograms show simulation results, red dots show analytical Gaussian solution.</em>
+</p>
+
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8470cc97-f195-4ee5-8fea-6db4c280fe87" width="700"/>
+  </p>
+
+<p align="center">
+  <em>Figure 4: Mean Square Displacement grows linearly with time (MSD = 2Dt), confirming diffusive behavior.</em>
+</p>
 
 **Key observations:**
 - Distributions remain Gaussian at all times
@@ -167,11 +180,23 @@ time_grid, positions = simulator.simulate_trajectories(
 
 ### Harmonic Potential
 
-![Harmonic potential distributions](plots/harmonic_distributions.png)
-*Position distributions approach equilibrium Boltzmann distribution (Gaussian with* $\sigma^2 = D/k = 1$).
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/39845f42-b219-47b6-8638-b46cc2eabb59" width="45%"/>
+  <img src="https://github.com/user-attachments/assets/f1533d3b-43d6-42ca-9176-6599ea0d4375" width="45%"/>
+    </p>
 
-![MSD vs time for harmonic potential](plots/harmonic_msd.png)
-*MSD saturates to ~1 at long times, showing confinement effect.*
+<p align="center">
+  <em>Figure 5: Position distributions at t = 0.5 (left) and t= 10.0. (right).</em>
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/46beabf4-1d00-4439-a0ab-edac66d53808" width="700"/>
+  </p>
+
+<p align="center">
+  <em>Figure 6: Position distributions approach equilibrium Boltzmann distribution (Gaussian with  σ^2 = D / k). MSD saturates to ~1 at long times, showing confinement effect.</em>
+</p>
 
 **Key observations:**
 - Initial diffusive regime (t < τ)
@@ -179,25 +204,29 @@ time_grid, positions = simulator.simulate_trajectories(
 - MSD saturation confirming harmonic confinement
 - Equilibrium variance ≈ 1 (for D=1, k=1)
 
-### Statistical Comparison
+#### Statistical Comparison
 
-| Time | Mean | Variance (Sim) | Variance (Theory) | Relative Error |
-|------|------|----------------|-------------------|----------------|
 
-| 10.0 | 0.0076 |  0.9828 | 1.0000 | 1.72% |
 Simulating 10000 trajectories until t = 10.0...
 
+| Time | Mean   | Variance (Sim) | Variance (Theory) | Relative Error |
+|------|--------|----------------|-------------------|----------------|
+| 10.0 | 0.0076 | 0.9828         | 1.0000            | 1.72%          |
+
+---
 
 ## Theoretical Insights
 
+### 1. Universality of Diffusion
+The simulations demonstrate that free Brownian motion leads to a universal diffusive spreading with MSD ∝ t, regardless of microscopic details. This behavior is fundamental to many physical, chemical, and biological processes.
 
-### 1. Role of Confining Potentials
+### 2. Role of Confining Potentials
 The harmonic potential case illustrates how external forces fundamentally alter transport properties:
 - **Transition from transport to confinement**: At short times, particles diffuse freely. At long times, the restoring force dominates, leading to localization.
 - **Equilibrium fluctuations**: Even at equilibrium, thermal noise causes persistent fluctuations with amplitude set by the balance between D (driving) and k (restoring).
 
 
-### 2. Fluctuation-Dissipation Connection
+### 3. Fluctuation-Dissipation Connection
 The equilibrium variance $\sigma^2_{eq} = D/k$ embodies the *fluctuation-dissipation theorem*: stronger dissipation (larger k) leads to smaller equilibrium fluctuations, with thermal energy (D) driving the fluctuations.
 
 ### Numerical Method Validation
@@ -206,17 +235,7 @@ The agreement between simulations and analytical solutions validates:
 - Convergence properties with time step Δt = 0.01
 - Statistical accuracy with 10,000 trajectories
 
-## References
-
-1. Chandrasekhar, S. (1943). "Stochastic Problems in Physics and Astronomy." *Reviews of Modern Physics*, 15(1), 1-89.
-2. Gardiner, C. W. (2009). *Stochastic Methods: A Handbook for the Natural and Social Sciences*. Springer.
-3. Risken, H. (1996). *The Fokker-Planck Equation: Methods of Solution and Applications*. Springer.
-4. Van Kampen, N. G. (2007). *Stochastic Processes in Physics and Chemistry*. Elsevier.
-
-## License
-
-MIT License
-
+---
 ## Author
 Lorena Puhl
 lorena.puhl@protonmail.com
