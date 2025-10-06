@@ -157,6 +157,9 @@ The histogram demonstrates that displacements follow a Gaussian distribution, as
 </p>
 The linear relationship between cumulative squared displacement and time confirms Einstein's diffusion relation. The slope of the fitted line provides an independent measure of the diffusion coefficient.
 
+___
 ## Author
 
 Lorena Puhl
+
+lorena.puhl@protonmail.com
