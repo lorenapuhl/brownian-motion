@@ -30,6 +30,7 @@ brownian-motion-analysis/
 └── experimental_analysis/
     ├── README.md                # Documentation for experimental data analysis
     ├── main.py                  # Data processing and analysis script
+    ├── measurements.dat         # Experimental data
     └── results/
         ├── free_diffusion.png           # Experimental trajectory analysis
         ├── free_diffusion_msd.png       # Measured MSD from experiments
@@ -65,7 +66,7 @@ Each subdirectory contains its own detailed README with:
 - Results and plots
 - Detailed analysis
 
-Navigate to `theoretical_analysis/` or `experimental_analysis/` to get started.
+Navigate to [`theoretical_analysis/`](https://github.com/lorenapuhl/brownian-motion/tree/main/theoretical_analysis) or [`experimental_analysis/`](https://github.com/lorenapuhl/brownian-motion/tree/main/experimental_analysis) to get started.
 
 ## Requirements
 
@@ -80,7 +81,3 @@ Python 3.7+
 Lorena Puhl
 
 lorena.puhl@protonmail.com
-
-## License
-
-MIT License
