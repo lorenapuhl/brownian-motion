@@ -8,8 +8,7 @@ of the Langevin equation. Two cases are studied:
 1. Free diffusion (no external potential)
 2. Harmonic confinement (harmonic oscillator potential)
 
-Author: [Your Name]
-Date: [Date]
+Author: Lorena Puhl
 """
 
 import numpy as np
