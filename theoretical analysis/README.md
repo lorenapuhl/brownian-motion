@@ -229,7 +229,7 @@ The harmonic potential case illustrates how external forces fundamentally alter 
 ### 3. Fluctuation-Dissipation Connection
 The equilibrium variance $\sigma^2_{eq} = D/k$ embodies the *fluctuation-dissipation theorem*: stronger dissipation (larger k) leads to smaller equilibrium fluctuations, with thermal energy (D) driving the fluctuations.
 
-### Numerical Method Validation
+### 4. Numerical Method Validation
 The agreement between simulations and analytical solutions validates:
 - The Euler-Maruyama numerical scheme for stochastic differential equations
 - Convergence properties with time step Δt = 0.01
@@ -238,4 +238,5 @@ The agreement between simulations and analytical solutions validates:
 ---
 ## Author
 Lorena Puhl
+
 lorena.puhl@protonmail.com
