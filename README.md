@@ -2,6 +2,12 @@
 
 A collection of computational physics projects exploring Brownian dynamics through both theoretical simulations and experimental data analysis.
 
+<p align="center">
+    <img width="500" alt="image" src="https://github.com/user-attachments/assets/448e2ccd-1d25-4aea-bfa6-ea698199caec" />
+  <br>
+  <em>Figure 1: Brownian motion of a particle under free diffusion. (Image from https://ipython-books.github.io/133-simulating-a-brownian-motion/). </em>
+</p>
+
 ## Introduction
 
 This repository contains two complementary approaches to studying Brownian motion:
